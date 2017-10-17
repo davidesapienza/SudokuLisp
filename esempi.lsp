@@ -1,0 +1,344 @@
+;esempi
+
+
+
+(ControlloRowCol
+(list
+
+(list 9 NIL NIL NIL NIL 2 NIL NIL 1)
+(list NIL 6 NIL 4 5 NIL NIL 7 NIL)
+(list NIL NIL NIL 8 NIL NIL NIL NIL NIL)
+
+(list 1 NIL NIL NIL 7 NIL 4 6 NIL)
+(list NIL 7 NIL NIL 1 NIL NIL 9 NIL)
+(list NIL 5 3 NIL 2 NIL NIL NIL 8)
+
+(list NIL NIL NIL NIL NIL 6 NIL NIL NIL)
+(list NIL 2 NIL NIL 9 5 NIL 4 NIL)
+(list 8 NIL NIL 2 NIL NIL NIL NIL 3)
+
+) 1)
+
+(RisolviNum (list
+
+(list 9 NIL NIL NIL NIL 2 NIL NIL 1)
+(list NIL 6 NIL 4 5 NIL NIL 7 NIL)
+(list NIL NIL NIL 8 NIL NIL NIL NIL NIL)
+
+(list 1 NIL NIL NIL 7 NIL 4 6 NIL)
+(list NIL 7 NIL NIL 1 NIL NIL 9 NIL)
+(list NIL 5 3 NIL 2 NIL NIL NIL 8)
+
+(list NIL NIL NIL NIL NIL 6 NIL NIL NIL)
+(list NIL 2 NIL NIL 9 5 NIL 4 NIL)
+(list 8 NIL NIL 2 NIL NIL NIL NIL 3)
+
+)
+(list
+
+(list 9 NIL NIL NIL NIL 2 NIL NIL 1)
+(list NIL 6 NIL 4 5 NIL NIL 7 NIL)
+(list NIL NIL NIL 8 NIL NIL NIL NIL NIL)
+
+(list 1 NIL NIL NIL 7 NIL 4 6 NIL)
+(list NIL 7 NIL NIL 1 NIL NIL 9 NIL)
+(list NIL 5 3 NIL 2 NIL NIL NIL 8)
+
+(list NIL NIL NIL NIL NIL 6 NIL NIL NIL)
+(list NIL 2 NIL NIL 9 5 NIL 4 NIL)
+(list 8 NIL NIL 2 NIL NIL NIL NIL 3)
+
+) 
+(ControlloRowCol
+(list
+
+(list 9 NIL NIL NIL NIL 2 NIL NIL 1)
+(list NIL 6 NIL 4 5 NIL NIL 7 NIL)
+(list NIL NIL NIL 8 NIL NIL NIL NIL NIL)
+
+(list 1 NIL NIL NIL 7 NIL 4 6 NIL)
+(list NIL 7 NIL NIL 1 NIL NIL 9 NIL)
+(list NIL 5 3 NIL 2 NIL NIL NIL 8)
+
+(list NIL NIL NIL NIL NIL 6 NIL NIL NIL)
+(list NIL 2 NIL NIL 9 5 NIL 4 NIL)
+(list 8 NIL NIL 2 NIL NIL NIL NIL 3)
+
+) 1)
+1)
+ 
+;(append (list (InserisciNum rand (car m) (car mBool) num)) (cdr m))
+(append (list (InserisciNum 3 (car (list
+
+(list 9 NIL NIL NIL NIL 2 NIL NIL 1)
+(list NIL 6 NIL 4 5 NIL NIL 7 NIL)
+(list NIL NIL NIL 8 NIL NIL NIL NIL NIL)
+
+(list 1 NIL NIL NIL 7 NIL 4 6 NIL)
+(list NIL 7 NIL NIL 1 NIL NIL 9 NIL)
+(list NIL 5 3 NIL 2 NIL NIL NIL 8)
+
+(list NIL NIL NIL NIL NIL 6 NIL NIL NIL)
+(list NIL 2 NIL NIL 9 5 NIL 4 NIL)
+(list 8 NIL NIL 2 NIL NIL NIL NIL 3)
+
+)) (car (list
+
+(list NIL NIL NIL NIL NIL NIL NIL NIL NIL)
+(list NIL NIL T NIL NIL T NIL NIL NIL)
+(list NIL T T NIL NIL T NIL NIL NIL)
+
+(list NIL NIL NIL NIL NIL NIL NIL NIL NIL)
+(list NIL NIL NIL NIL NIL NIL NIL NIL NIL)
+(list NIL NIL NIL NIL NIL NIL T T NIL)
+
+(list NIL T T T NIL NIL T T NIL)
+(list NIL NIL T T NIL NIL T NIL NIL)
+(list NIL T T NIL NIL T T T NIL)
+
+)) 1)) (cdr (list
+
+(list 9 NIL NIL NIL NIL 2 NIL NIL 1)
+(list NIL 6 NIL 4 5 NIL NIL 7 NIL)
+(list NIL NIL NIL 8 NIL NIL NIL NIL NIL)
+
+(list 1 NIL NIL NIL 7 NIL 4 6 NIL)
+(list NIL 7 NIL NIL 1 NIL NIL 9 NIL)
+(list NIL 5 3 NIL 2 NIL NIL NIL 8)
+
+(list NIL NIL NIL NIL NIL 6 NIL NIL NIL)
+(list NIL 2 NIL NIL 9 5 NIL 4 NIL)
+(list 8 NIL NIL 2 NIL NIL NIL NIL 3)
+
+)))
+
+
+
+(append (list (InserisciNum 0 (list 9 NIL NIL NIL NIL 2 NIL NIL 1)
+
+ (list NIL T NIL NIL NIL NIL NIL NIL NIL)
+
+
+ 1)) (cdr (list
+
+(list 9 NIL NIL NIL NIL 2 NIL NIL 1)
+(list NIL 6 NIL 4 5 NIL NIL 7 NIL)
+(list NIL NIL NIL 8 NIL NIL NIL NIL NIL)
+
+(list 1 NIL NIL NIL 7 NIL 4 6 NIL)
+(list NIL 7 NIL NIL 1 NIL NIL 9 NIL)
+(list NIL 5 3 NIL 2 NIL NIL NIL 8)
+
+(list NIL NIL NIL NIL NIL 6 NIL NIL NIL)
+(list NIL 2 NIL NIL 9 5 NIL 4 NIL)
+(list 8 NIL NIL 2 NIL NIL NIL NIL 3)
+
+)))
+
+
+;es RisolviSudoku
+;defun RisolviSudoku (mOrig m mBool num row)
+(RisolviSudoku 
+(list
+
+(list 9 NIL NIL NIL NIL 2 NIL NIL 1)
+(list NIL 6 NIL 4 5 NIL NIL 7 NIL)
+(list NIL NIL NIL 8 NIL NIL NIL NIL NIL)
+
+(list 1 NIL NIL NIL 7 NIL 4 6 NIL)
+(list NIL 7 NIL NIL 1 NIL NIL 9 NIL)
+(list NIL 5 3 NIL 2 NIL NIL NIL 8)
+
+(list NIL NIL NIL NIL NIL 6 NIL NIL NIL)
+(list NIL 2 NIL NIL 9 5 NIL 4 NIL)
+(list 8 NIL NIL 2 NIL NIL NIL NIL 3)
+
+)
+(list
+
+(list 9 NIL NIL NIL NIL 2 NIL NIL 1)
+(list NIL 6 NIL 4 5 NIL NIL 7 NIL)
+(list NIL NIL NIL 8 NIL NIL NIL NIL NIL)
+
+(list 1 NIL NIL NIL 7 NIL 4 6 NIL)
+(list NIL 7 NIL NIL 1 NIL NIL 9 NIL)
+(list NIL 5 3 NIL 2 NIL NIL NIL 8)
+
+(list NIL NIL NIL NIL NIL 6 NIL NIL NIL)
+(list NIL 2 NIL NIL 9 5 NIL 4 NIL)
+(list 8 NIL NIL 2 NIL NIL NIL NIL 3)
+
+)
+(ControlloRowCol
+(list
+
+(list 9 NIL NIL NIL NIL 2 NIL NIL 1)
+(list NIL 6 NIL 4 5 NIL NIL 7 NIL)
+(list NIL NIL NIL 8 NIL NIL NIL NIL NIL)
+
+(list 1 NIL NIL NIL 7 NIL 4 6 NIL)
+(list NIL 7 NIL NIL 1 NIL NIL 9 NIL)
+(list NIL 5 3 NIL 2 NIL NIL NIL 8)
+
+(list NIL NIL NIL NIL NIL 6 NIL NIL NIL)
+(list NIL 2 NIL NIL 9 5 NIL 4 NIL)
+(list 8 NIL NIL 2 NIL NIL NIL NIL 3)
+
+) 1)
+1
+0
+)
+
+;
+;RisolviSudoku con 3 righe e 3 colonne
+(RisolviSudoku 
+(list (list NIL NIL NIL) (list NIL NIL NIL) (list NIL NIL NIL))
+(list (list NIL NIL NIL) (list NIL NIL NIL) (list NIL NIL NIL))
+(ControlloRowCol (list (list NIL NIL NIL) (list NIL NIL NIL) (list NIL NIL NIL)) 1)
+1
+0
+)
+
+
+;ES SUDOKU SEMPLICE
+(Sudoku 
+(list
+
+(list NIL 6 9 5 7 1 2 4 8)
+(list 8 4 5 9 3 NIL 6 NIL 7)
+(list 7 NIL NIL NIL 4 6 3 5 NIL)
+
+(list NIL 5 1 NIL 2 NIL 9 NIL 3)
+(list 9 7 NIL NIL 6 8 1 2 NIL)
+(list 2 3 8 NIL NIL 5 4 7 6)
+
+(list 5 NIL 6 4 NIL 3 7 NIL 2)
+(list NIL 2 7 NIL 5 NIL 8 3 1)
+(list 1 NIL 3 2 8 7 NIL 6 4)
+
+))
+;Facile2
+(Sudoku 
+(list
+
+(list NIL NIL 8 6 7 NIL NIL NIL 5)
+(list 5 NIL 2 NIL NIL NIL NIL NIL 4)
+(list NIL 6 NIL 5 NIL NIL NIL 3 NIL)
+
+(list 8 2 3 NIL 6 7 5 4 9)
+(list NIL NIL NIL 2 NIL NIL NIL NIL NIL)
+(list NIL 7 5 NIL NIL NIL NIL 8 6)
+
+(list NIL 8 6 NIL NIL 5 9 7 NIL)
+(list 7 NIL NIL NIL 1 3 NIL 2 NIL)
+(list NIL NIL NIL NIL 8 NIL 4 NIL 3)
+
+))
+
+(Sudoku 
+(list
+
+(list 8 NIL NIL NIL NIL 5 NIL 7 1)
+(list 6 1 3 4 NIL NIL NIL 2 NIL)
+(list NIL NIL NIL NIL 2 3 NIL 4 NIL)
+
+(list 3 NIL 4 5 NIL 9 NIL 6 NIL)
+(list NIL NIL 7 NIL 3 NIL 8 NIL NIL)
+(list NIL 2 NIL 8 NIL 7 9 NIL 5)
+
+(list NIL 6 NIL 2 9 NIL NIL NIL NIL)
+(list NIL 3 NIL NIL NIL 4 1 8 6)
+(list 5 7 NIL 3 NIL NIL NIL NIL 2)
+
+))
+
+(Sudoku 
+(list
+
+(list NIL NIL NIL 7 NIL NIL 4 NIL NIL)
+(list NIL 3 NIL NIL 9 NIL NIL 2 NIL)
+(list 4 NIL NIL NIL NIL 5 NIL NIL NIL)
+
+(list NIL NIL 8 NIL NIL NIL NIL NIL 5)
+(list NIL 9 NIL NIL 3 NIL NIL 7 NIL)
+(list 6 NIL NIL NIL NIL NIL 3 NIL NIL)
+
+(list NIL NIL NIL 4 NIL NIL NIL NIL 1)
+(list NIL 7 NIL NIL 2 NIL NIL 9 NIL)
+(list NIL NIL 5 NIL NIL 8 NIL NIL NIL)
+
+))
+;--
+;DIFFICILE!!!
+(Sudoku 
+(list
+
+(list 9 NIL NIL NIL NIL 2 NIL NIL 1)
+(list NIL 6 NIL 4 5 NIL NIL 7 NIL)
+(list NIL NIL NIL 8 NIL NIL NIL NIL NIL)
+
+(list 1 NIL NIL NIL 7 NIL 4 6 NIL)
+(list NIL 7 NIL NIL 1 NIL NIL 9 NIL)
+(list NIL 5 3 NIL 2 NIL NIL NIL 8)
+
+(list NIL NIL NIL NIL NIL 6 NIL NIL NIL)
+(list NIL 2 NIL NIL 9 5 NIL 4 NIL)
+(list 8 NIL NIL 2 NIL NIL NIL NIL 3)
+
+))
+
+;
+(Sudoku 
+(list
+
+(list NIL 6 NIL NIL 5 NIL NIL NIL NIL)
+(list NIL NIL 2 NIL NIL NIL 1 NIL NIL)
+(list NIL NIL 7 8 NIL 9 NIL NIL NIL)
+
+(list 4 5 6 NIL NIL 7 8 NIL NIL)
+(list NIL NIL NIL NIL NIL NIL NIL NIL NIL)
+(list NIL NIL 9 3 NIL NIL 2 6 7)
+
+(list NIL NIL NIL 2 NIL 4 5 NIL NIL)
+(list NIL NIL 8 NIL NIL NIL 9 NIL NIL)
+(list NIL NIL NIL NIL 6 NIL NIL 3 NIL)
+
+))
+
+;
+(Sudoku 
+(list
+
+(list NIL NIL NIL NIL 3 NIL NIL 6 NIL)
+(list 1 NIL NIL NIL NIL NIL NIL 4 NIL)
+(list 7 NIL NIL 1 NIL NIL NIL NIL NIL)
+
+(list NIL 3 NIL NIL 6 NIL NIL NIL NIL)
+(list NIL NIL NIL 8 NIL 7 NIL NIL NIL)
+(list NIL NIL NIL NIL NIL NIL 2 NIL NIL)
+
+(list NIL NIL NIL 2 NIL NIL 7 NIL 8)
+(list NIL 5 NIL NIL 4 NIL NIL NIL NIL)
+(list NIL NIL NIL NIL NIL NIL 1 NIL NIL)
+
+))
+
+;
+(Sudoku 
+(list
+
+(list NIL NIL NIL NIL 6 1 NIL NIL NIL)
+(list NIL 4 NIL NIL NIL NIL 5 NIL NIL)
+(list NIL NIL NIL NIL NIL NIL NIL NIL NIL)
+
+(list 6 NIL 1 NIL NIL NIL NIL 2 NIL)
+(list NIL NIL NIL 7 3 NIL 4 NIL NIL)
+(list 8 NIL NIL NIL NIL NIL NIL NIL NIL)
+
+(list 2 NIL NIL NIL NIL NIL NIL NIL 6)
+(list NIL 5 NIL 9 NIL NIL NIL NIL NIL)
+(list NIL NIL NIL 4 NIL NIL 3 NIL NIL)
+
+))
+
+;
